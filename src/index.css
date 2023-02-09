@@ -28,6 +28,7 @@
   --fs-secondary-heading: var(--fs-700);
   --fs-button: var(--fs-300);
 
+  --size-xs: .05rem;
   --size-100: .25rem;
   --size-200: .5rem;
   --size-300: .75rem;
@@ -133,12 +134,25 @@ body {
   background-color: var(--clr-primary);
 }
 
-.hero-img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 70%;
+/* hero */
+
+.hero-img__sm {
+  display: none;
 }
+
+@media (max-width: 47em) {
+  .hero-img {
+    display: none;
+  }
+
+  .hero-img__sm {
+    display: block;
+    width: 90%;
+    margin-inline: auto;
+    border: solid var(--clr-accent) var(--size-xs);
+  }
+}
+
 
 /* navigation */
 
@@ -173,14 +187,85 @@ body {
   color: var(--clr-accent);
 }
 
+/* sudo img */
+
+
+.sudo__img::before {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  opacity: 0.4;
+  right: 0;
+  top: 0;
+  width: 87%;
+  max-height: 70vh;
+  max-height: 70dvh;
+  aspect-ratio: 1 / 1.2;
+  background-image: url("assets/hairwoman.png");
+  background-repeat: no-repeat;
+  background-position: bottom left;
+}
+
+@media (min-width: 47em) {
+  .sudo__img::before {
+    width: 45%;
+  }
+}
+
+@media (max-width: 47em) {
+  .sudo__img::before {
+    display: none;
+  }  
+}
+
+/* about */
+
+.about__img {
+  width: 89%;
+  border-radius: 10%;
+  margin-top: var(--size-800);
+  margin-left: auto;
+}
+
+@media (max-width: 47em) {
+  .about__img {
+    margin-top: var(--size-200);
+    margin-inline: auto;
+  }  
+}
+
+/* offer */
+
+.items {
+  border: solid var(--clr-accent);
+}
+
+.items__list li{
+  list-style-type: none;
+  margin-top: var(--size-500);
+}
+
+
 /* utility classes */
 
 .container {
-  --max-width: 1110px;
+  --max-width: 1030px;
   --container-padding: 1rem;
 
   width: min(var(--max-width), 100% - (var(--container-padding)*2));
   margin-inline: auto;
+}
+
+.even-columns {
+  display: grid;
+  gap: 1rem;
+}
+
+@media (min-width: 47em) {
+  .even-columns {
+    grid-auto-flow: column;
+    grid-auto-columns: 1fr;
+  }
 }
 
 .visually-hidden {
@@ -194,3 +279,34 @@ body {
   white-space: nowrap;
   border: 0;
 }
+
+@media (max-width: 47em) {
+  .text-center-sm-only {
+    text-align: center;
+  }
+
+  .text-center-sm-only p {
+    margin-inline: auto;
+  }
+}
+
+.padding-block-600 {
+  padding-block: var(--size-600);
+}
+
+.padding-block-800 {
+  padding-block: var(--size-800);
+}
+
+:where(.flow :not(:first-child)) {
+  margin-top: var(--flow-space, 1em);
+}
+
+.fs-primary-heading {
+  font-size: var(--fs-primar-heading);
+  line-height: 1.1;
+  margin-bottom: var(--size-500);
+}
+
+
+
