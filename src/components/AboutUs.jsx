@@ -2,7 +2,7 @@ import hairabout from '.././assets/hairabout.png'
 
 function AboutUs() {
   return (
-    <section className="text-center-sm-only padding-block-600">
+    <section className="text-center-sm-only padding-block-600" id="about-us">
       <div className="container">
         <h1 className="fs-primary-heading">O nas</h1>
           <div className="even-columns">
