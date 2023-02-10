@@ -8,9 +8,9 @@ function Header() {
           </button>
           <nav className="primary-navigation" id="primary-navigation">
             <ul aria-label="primary" role="list" className="nav-list">
-              <li><a href="#">O nas</a></li>
-              <li><a href="#">Usługi</a></li>
-              <li><a href="#">Kontakt</a></li>
+              <li><a href="#about-us">O nas</a></li>
+              <li><a href="#offer">Usługi</a></li>
+              <li><a href="#contact">Kontakt</a></li>
             </ul>
           </nav>
         </div>
