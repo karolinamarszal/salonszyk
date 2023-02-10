@@ -1,6 +1,6 @@
 function Contact() {
   return (
-    <section className="text-center-sm-only padding-block-600">
+    <section className="text-center-sm-only padding-block-600" id="contact">
       <div className="container">
         <h1 className="fs-primary-heading">Kontakt</h1>
           <div className="even-columns">
