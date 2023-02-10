@@ -7,7 +7,6 @@ function AboutUs() {
         <h1 className="fs-primary-heading">O nas</h1>
           <div className="even-columns">
             <div className="flow">
-
               <p>Salon Fryzjerski "Szyk" to miejsce, w którym każdy może poczuć się wyjątkowo. Nasz zespół składa się 
                 z doświadczonych i profesjonalnych fryzjerów, którzy dbają o to, aby każdy nasz klient czuł się 
                 zadowolony z wykonanej usługi - stawiamy na najwyższą jakość i komfort.</p>
