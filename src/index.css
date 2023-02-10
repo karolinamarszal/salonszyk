@@ -73,7 +73,7 @@ ol[role='list'] {
 }
 
 /* Set core root defaults */
-html:focus-within {
+html, html:focus-within {
   scroll-behavior: smooth;
 }
 
@@ -236,13 +236,21 @@ body {
 
 /* offer */
 
-.items {
-  border: solid var(--clr-accent);
+.offer__img {
+  width: 94%;
+  border-radius: 10%;
+  margin-left: auto;
+  opacity: 0.6;
 }
 
-.items__list li{
-  list-style-type: none;
-  margin-top: var(--size-500);
+ul {
+  list-style-position: inside;
+}
+
+.offer-list {
+  padding-top: var(--size-600);
+  background-color: rgba(247, 247, 247, 0.63);
+  border-radius: 10%;
 }
 
 /* map */
