@@ -44,8 +44,8 @@ function Contact() {
                 </ul>
                 <ul className="contact-list__basic">
                   <li><span>Adres</span></li>
-                  <li>Rakszawa 348</li>
-                  <li>37-100 Łańcut</li>
+                  <li>Kwiatowa 23</li>
+                  <li>45-300 Narnia</li>
                 </ul>
               </div>
             </div>
@@ -56,13 +56,3 @@ function Contact() {
 }
 
 export default Contact;
-
-{/* <ul className="contact-list__items">
-<li>Poniedziałek <span>nieczynne</span></li>
-<li>Wtorek 9:00 - 17:00</li>
-<li>Środa 9:00 - 17:00</li>
-<li>Czwartek 9:00 - 17:00</li>
-<li>Piątek 9:00 - 17:00</li>
-<li>Sobota 7:00 - 15:00</li>
-<li>Niedziela <span>nieczynne</span></li>
-</ul> */}
