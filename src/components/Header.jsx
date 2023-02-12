@@ -1,21 +1,36 @@
+import { useState } from 'react';
+import iconClose from '.././assets/iconClose.svg'
+import iconHamburger from '.././assets/iconHamburger.svg'
+
+
 function Header() {
+  
+  const [mobileMenu, setMobileMenu] = useState(false); 
+  const toggleMobileMenu = () => {
+    setMobileMenu(!mobileMenu);
+  }
+
   return (
-    <header className="primary-header">
-      <div className="container">
+    <header className="container primary-header">
+      <div className={`${mobileMenu ? 'primary-navigation primary-header__mobile' : 'visually-hidden__mobile'}`}>
         <div className="nav-wrapper">
-          <button className="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
-            <span className="visually-hidden">Menu</span>
-          </button>
           <nav className="primary-navigation" id="primary-navigation">
-            <ul aria-label="primary" role="list" className="nav-list">
-              <li><a href="#about-us">O nas</a></li>
-              <li><a href="#offer">Usługi</a></li>
-              <li><a href="#contact">Kontakt</a></li>
+            <ul className="nav-list">
+              <li onClick={toggleMobileMenu}><a href="#about-us">O nas</a></li>
+              <li onClick={toggleMobileMenu}><a href="#offer">Usługi</a></li>
+              <li onClick={toggleMobileMenu}><a href="#contact">Kontakt</a></li>
             </ul>
           </nav>
         </div>
       </div>
-    </header>
+      <button className="btn" onClick={toggleMobileMenu}>
+        {
+            mobileMenu 
+            ? <img src={iconClose} alt="closeMenu" />
+            : <img src={iconHamburger} alt="menu" />
+        }
+      </button>
+    </header> 
   )
 }
 
