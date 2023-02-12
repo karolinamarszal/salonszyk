@@ -21,8 +21,8 @@ function Footer() {
             <br></br>
             <p>Tel. +48 888 888 888</p>
             <br></br>
-            <p>Rakszawa 348</p>
-            <p>37-100 Łańcut</p>
+            <p>Kwiatowa 23</p>
+            <p>45-300 Narnia</p>
           </div>
         </div>
         <div className="footer-bottom">
