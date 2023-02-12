@@ -6,7 +6,7 @@ function Offer() {
       <div className="container">
         <h1 className="fs-primary-heading">Usługi</h1>
           <div className="even-columns">
-            <div className="flow offer-list">
+            <div className="flow">
               <ul>
                 <li>Strzyżenie męskie</li>
                 <li>Strzyżenie damskie</li>
