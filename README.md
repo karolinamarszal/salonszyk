@@ -11,5 +11,5 @@ Project is created with
 'Szyk' Hair Salon project built with React. [Live Demo](https://superlative-kleicha-d01528.netlify.app/)
 
 ## Credits
-Pictures from [canva.com](https://canva.com/ 'Canva')
+Pictures downloaded from [canva.com](https://canva.com/ 'Canva')
 
