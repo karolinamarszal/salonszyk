@@ -5,6 +5,8 @@ Website prepared for one of the hair salons in Poland.
 
 Project is created with
 * [React 18](https://react.dev/blog/2022/03/29/react-v18) (React framework)
+* JavaScript
+* HTML, CSS
 
 'Szyk' Hair Salon project built with React. [Live Demo](https://superlative-kleicha-d01528.netlify.app/)
 
