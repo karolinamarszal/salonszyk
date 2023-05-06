@@ -8,7 +8,7 @@ Project is created with
 * JavaScript
 * HTML, CSS
 
-'Szyk' Hair Salon project built with React. [Live Demo]**(https://salonszyk.netlify.app/)**
+'Szyk' Hair Salon project built with React. **[Live Demo](https://salonszyk.netlify.app/)**
 
 ## Credits
 Pictures downloaded from [canva.com](https://canva.com/ 'Canva')
